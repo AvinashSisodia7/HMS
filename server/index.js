@@ -8,7 +8,10 @@ import Doctoroutes from './Routes/DoctorRoutes.js';
 const app = express();
 dotenv.config();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://hms-one-flame.vercel.app",
+    credentials: true,
+}));
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
