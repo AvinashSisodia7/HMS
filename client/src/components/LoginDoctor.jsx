@@ -17,7 +17,7 @@ function LoginDoctor() {
   }, [])
   const handleSubmit = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/doctor/login', {
+      const res = await axios.post('https://hms-id7z.onrender.com/api/doctor/login', {
         email: email,
         password: password
       })

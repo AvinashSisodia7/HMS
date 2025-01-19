@@ -21,7 +21,7 @@ function RegisterDoctor() {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/doctor/register', {
+      const res = await axios.post('https://hms-id7z.onrender.com/api/doctor/register', {
         name: doctorDetail.name,
         email: doctorDetail.email,
         password: doctorDetail.password,

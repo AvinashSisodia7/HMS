@@ -4,7 +4,7 @@ import axios from "axios";
 export const MyBookings = () => {
     const [bookings, setBookings] = useState([]);
     useEffect( ()=>{
-        axios.get("http://localhost:5000/api/user/getallappointments", {
+        axios.get("https://hms-id7z.onrender.com/api/user/getallappointments", {
             headers : {
                 Authorization : `Bearer ${localStorage.getItem('token')}`
             }

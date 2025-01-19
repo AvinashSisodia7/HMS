@@ -5,7 +5,7 @@ export const AllDoctors = () => {
     const [doctors , setDoctors] = useState([])
 
     useEffect(()=> {
-        axios.get("http://localhost:5000/api/user/getalldoctor" , {
+        axios.get("https://hms-id7z.onrender.com/api/user/getalldoctor" , {
             headers : {
                 Authorization : `Bearer ${localStorage.getItem('token')}`
             }
